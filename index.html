@@ -8,16 +8,29 @@
     <title>My Profile</title>
 </head>
 <body>
-   <div id="about">
+<!--  So there is something called semantic HTMl(remember I asked you about it from the beginning), so if you are to follow the use of semantic html, you should avoid
+    using div for almost everything-->
+    <!--  You should have something like <nav></nav> for navigation if you have any, and then <main></main> to contain all your contents, <footer></footer> if you have any footer details on the page     -->
+   
+    
+    <!--      so for example, the div below can be a <main></main>-->
+    <div id="about"> 
     <div class="container">
         <div class="row">
+            
+            <!--      Also, the div below can be a <section></section>-->
             <div class="about-col-1">
+<!--            An image tag should always have an `alt` attribute(describing the image) so that assistive technologies can read out for people who cannot see or for when the image doesn't load      -->
                 <img src="images/user.jpg">
             </div>
+            
+              <!--      And this div below can also be a <section></section>-->
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>Hi, I'm Nwankwo Emmanuel. A web developer and a programmer with the zeal to improve myself and the tech world in general.</p>
                 <h2 class="sub-title2">Aim & Objectives</h2>
+                
+<!--          Good job on using semantic html here for list        -->
                 <ul>
                     <li>To have intermediary kwoledge of at least 5 programming languages.</li>
                     <li>To build and host my Personal website.</li>
